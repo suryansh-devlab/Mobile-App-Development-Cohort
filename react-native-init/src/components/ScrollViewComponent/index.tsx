@@ -15,6 +15,7 @@ export default function ScrollViewComponent() {
         marginTop: 20,
         marginBottom: 30,
       }}
+      showsVerticalScrollIndicator={false}
     >
       <Text style={{ fontSize: 20, marginBottom: 15 }}>
         Scroll View Component
@@ -46,8 +47,8 @@ export default function ScrollViewComponent() {
       <Switch
         value={isDarkMode}
         onValueChange={setIsDarkMode}
-        trackColor={{ false: "red", true: "green" }}
-        thumbColor={"blue"}
+        trackColor={{ false: "white", true: "black" }}
+        thumbColor={"gray"}
       />
     </ScrollView>
   );
